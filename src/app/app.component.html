@@ -1,0 +1,11 @@
+<input type="radio" [(ngModel)]="option" [value]="1" /> 1
+<input type="radio" [(ngModel)]="option" [value]="2" />2
+
+<h2>Opção: {{ option }}</h2>
+
+<div *ngIf="option == '1'">
+  <app-jurossimples></app-jurossimples>
+</div>
+<div *ngIf="option == '2'">
+  <app-juroscomposto></app-juroscomposto>
+</div>
